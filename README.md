@@ -4,6 +4,22 @@ To check if a number is a Palindrome number or not, we first take the input of t
 We then create a new variable to store the reversed number and initialize it with 0.
 Traverse through the number using mod 10 and division by 10 operations and in each loop make sure to add the digit in the reversed number variable*10.
 
+Example 1:
+
+Input: x = 121
+Output: true
+Explanation: 121 reads as 121 from left to right and from right to left.
+Example 2:
+
+Input: x = -121
+Output: false
+Explanation: From left to right, it reads -121. From right to left, it becomes 121-. Therefore it is not a palindrome.
+Example 3:
+
+Input: x = 10
+Output: false
+Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
+
     def isPalindrome(x):
         if x < 0:
             return False
